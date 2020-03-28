@@ -24,56 +24,68 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -82,35 +94,43 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   background-color: #000;
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 ::-webkit-scrollbar {
   display: none;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  *   Laysout
@@ -120,71 +140,90 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  flex: 1;
+}
 
 .l-confirm {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+}
 
 .l-select {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+}
 
 /**
  *   Object1
  * ======================= */
 /* Conponent -------------- */
 .c-arrow {
-  margin-top: 2rem; }
-  .c-arrow.-view {
-    color: #fff;
-    font-size: 6rem; }
-  .c-arrow__box {
-    animation: arrow 1s linear infinite;
-    transform-origin: 50% 50%;
-    margin: 1rem 0 !important; }
+  margin-top: 2rem;
+}
+
+.c-arrow.-view {
+  color: #fff;
+  font-size: 6rem;
+}
+
+.c-arrow__box {
+  animation: arrow 1s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 1rem 0 !important;
+}
 
 @keyframes arrow {
   0% {
-    transform: translateY(0); }
+    transform: translateY(0);
+  }
   33.33333% {
-    transform: translateY(-10px); }
+    transform: translateY(-10px);
+  }
   66.66667% {
-    transform: translateY(0); }
+    transform: translateY(0);
+  }
   100% {
-    transform: translateY(0); } }
+    transform: translateY(0);
+  }
+}
 
 /* Project -------------- */
 .p-top__title.-view {
   color: #fff;
   font-family: 'Caveat', sans-serif;
   font-size: 8rem;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .p-confirm__text.-view {
   color: #fff;
   font-size: 3rem;
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .p-select__text.-view {
   color: #fff;
   font-size: 3rem;
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .p-select__text.-list {
   width: 20rem;
-  margin: 1rem auto 0 auto; }
-  .p-select__text.-list.-view {
-    background-color: #fff;
-    color: #000;
-    border-radius: 21rem; }
+  margin: 1rem auto 0 auto;
+}
+
+.p-select__text.-list.-view {
+  background-color: #fff;
+  color: #000;
+  border-radius: 21rem;
+}
 
 /* Utillity -------------- */

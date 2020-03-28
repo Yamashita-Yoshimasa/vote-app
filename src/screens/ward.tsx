@@ -43,7 +43,6 @@ class Ward extends React.Component<WardProps,WardState>{
         let test2:[] = this.state.WardBox.map(item => item[1])
         // let test3:[] = test2.map(item => item[0])
         console.log(Object.keys(test2))
-        let zero = "0";
         console.log(test2[String(1)])
         return (
             <p id="ward" className="p-select__text -view">test</p> 
