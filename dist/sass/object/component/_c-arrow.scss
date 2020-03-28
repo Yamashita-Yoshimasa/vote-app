@@ -1,0 +1,18 @@
+.c-arrow {
+    margin-top: 2rem;
+    &.-view {
+        color: #fff;
+        font-size: 6rem;
+    }
+    &__box {
+        animation: arrow 1s linear infinite;
+        transform-origin: 50% 50%;
+        margin: 1rem 0 !important; 
+    }
+    @keyframes arrow {
+        0% { transform: translateY(0) }
+        33.33333% { transform: translateY(-10px) }
+        66.66667% { transform: translateY(0) }
+        100% { transform: translateY(0) }
+      }
+}

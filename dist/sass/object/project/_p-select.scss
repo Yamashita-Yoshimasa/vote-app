@@ -1,0 +1,19 @@
+.p-select {
+    &__text {
+        &.-view {
+            color: #fff;
+            font-size: 3rem;
+            font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
+            font-weight: bold;
+        } 
+        &.-list {
+            width: 20rem;
+            margin: 1rem auto 0 auto;
+            &.-view {
+                background-color: #fff;
+                color: #000;
+                border-radius: 21rem;
+            }
+        }
+    }
+}
