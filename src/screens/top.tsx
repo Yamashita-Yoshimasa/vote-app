@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 function Top() {
         return (
-            <div className="l-top">
+            <div id="top" className="l-top">
                 <div className="p-top">
                     <h1 className="p-top__title -view">Let's Vote</h1>
                     <div className="c-arrow__box">
