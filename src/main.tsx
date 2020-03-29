@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Top from './screens/top';
 import Aichi from './screens/Aichi';
+import Mie from './screens/Mie';
 
 class App extends React.Component {
   
@@ -15,6 +16,7 @@ class App extends React.Component {
           <div className="container">
           <Route exact path="/" component={Top} />
           <Route exact path="/愛知" component={Aichi} />
+          <Route exact path="/三重" component={Mie} />
           </div>
         </Switch>
       </BrowserRouter>

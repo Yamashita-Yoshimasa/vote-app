@@ -135,7 +135,7 @@ li {
 /**
  *   Laysout
  * ======================== */
-.l-Aichi {
+.l-confirm {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -143,11 +143,11 @@ li {
   text-align: center;
 }
 
-.l-confirm {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+.l-prefecture {
   align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -165,6 +165,10 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.l-ward {
+  text-align: left;
 }
 
 /**
@@ -202,29 +206,33 @@ li {
 }
 
 /* Project -------------- */
-.p-Aichi__imagebox {
-  position: relative;
-}
-
-.p-Aichi__name {
-  position: absolute;
-  top: 40%;
-  right: 40%;
-}
-
-.p-Aichi__name.-view {
-  font-size: 2.5rem;
-}
-
-.p-Aichi__image {
-  width: 30rem;
-}
-
 .p-confirm__text.-view {
   color: #fff;
   font-size: 3rem;
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
   font-weight: bold;
+}
+
+.p-prefecture__imagebox {
+  position: relative;
+}
+
+.p-prefecture__name {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+
+.p-prefecture__name.-view {
+  font-size: 2.5rem;
+}
+
+.p-prefecture__image {
+  width: 30rem;
+}
+
+.p-prefecture__image.-mie {
+  width: 20rem;
 }
 
 .p-select__text.-view {
@@ -251,6 +259,22 @@ li {
   font-family: 'Caveat', sans-serif;
   font-size: 8rem;
   font-weight: 700;
+}
+
+.p-ward__number.-view {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.p-ward__name.-view {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.p-ward__ward-box.-view {
+  border-bottom: 1px solid #fff;
 }
 
 /* Utillity -------------- */

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import db from '../firebaseInit';
+import { string } from 'prop-types';
 
 interface WardProps {
     PreItem: string;
@@ -25,25 +26,31 @@ class Ward extends React.Component<WardProps,WardState>{
             Prefecture = "2";
         }
         db.collection("single").doc(Prefecture).collection("Ward").get().then((query) => {
+            console.log(typeof query);
             query.forEach((doc) => {
               var data = doc.data();
               buff.push([doc.id, data.ward]);
             });
             this.setState({WardBox: buff});
           })
-          .catch((error)=>{
+          .catch((error: Error)=>{
             console.log(`データの取得に失敗しました (${error})`);
           });
     }
     render() {
-        let test0:[] = this.state.WardBox.map(item => item[0])
-        // let test1:[] = test0.map(item => item[0])
-        let test2:[] = this.state.WardBox.map(item => item[1])
-        // let test3:[] = test2.map(item => item[0])
-        console.log(Object.keys(test2))
-        console.log(test2[String(1)])
+        let WardNumber = this.state.WardBox.map(item => item[0]);
+        let Ward = this.state.WardBox.map(item => item[1]);
+        console.log(WardNumber)
+        console.log(Ward[String(0)])
         return (
-            <p id="ward" className="p-select__text -view">test</p> 
+            <div id="ward" className="l-ward">
+                {WardNumber.map(item =>(
+                    <div className="p-ward__ward-box -view" key={item}>
+                        <p className="p-ward__number -view">{`第${item}区`}</p>
+                        <p className="p-ward__name -view">{Ward[String(Number(item)-1)]}</p>
+                    </div>
+                ))}
+            </div> 
         )
     }
 }  

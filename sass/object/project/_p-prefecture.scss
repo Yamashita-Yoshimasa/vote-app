@@ -1,4 +1,4 @@
-.p-Aichi {
+.p-prefecture {
     &__imagebox {
         position: relative;
     }
@@ -12,5 +12,8 @@
     }
     &__image {
         width: 30rem;
+        &.-mie {
+            width: 20rem;
+        }
     }
 }

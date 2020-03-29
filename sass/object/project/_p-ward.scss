@@ -1,0 +1,22 @@
+
+.p-ward {
+    &__number {
+        &.-view {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    &__name {
+        &.-view {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    &__ward-box {
+        &.-view {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
