@@ -132,6 +132,7 @@ li {
   -webkit-appearance: none;
 }
 
+/* breakpoints */
 /**
  *   Laysout
  * ======================== */
@@ -271,6 +272,12 @@ li {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .p-ward__name.-view {
+    font-size: 1.6rem;
+  }
 }
 
 .p-ward__ward-box.-view {
