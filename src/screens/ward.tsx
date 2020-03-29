@@ -40,7 +40,7 @@ class Ward extends React.Component<WardProps,WardState>{
     render() {
         let WardNumber = this.state.WardBox.map(item => item[0]);
         let Ward = this.state.WardBox.map(item => item[1]);
-        console.log(WardNumber)
+        console.log(typeof WardNumber)
         console.log(Ward[String(0)])
         return (
             <div id="ward" className="l-ward">
