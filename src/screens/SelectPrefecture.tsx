@@ -1,6 +1,6 @@
-import * as React from "react"
-import db from '../firebaseInit'
-import Select from './select'
+import * as React from 'react';
+import db from '../firebaseInit';
+import Select from './select';
 import Ward from './ward';
 
 interface PrefectureState {

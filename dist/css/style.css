@@ -135,9 +135,8 @@ li {
 /**
  *   Laysout
  * ======================== */
-.l-top {
+.l-Aichi {
   display: flex;
-  flex: 1;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -146,7 +145,6 @@ li {
 
 .l-confirm {
   display: flex;
-  flex: 1;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -155,7 +153,14 @@ li {
 
 .l-select {
   display: flex;
-  flex: 1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.l-top {
+  display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -197,11 +202,22 @@ li {
 }
 
 /* Project -------------- */
-.p-top__title.-view {
-  color: #fff;
-  font-family: 'Caveat', sans-serif;
-  font-size: 8rem;
-  font-weight: 700;
+.p-Aichi__imagebox {
+  position: relative;
+}
+
+.p-Aichi__name {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+
+.p-Aichi__name.-view {
+  font-size: 2.5rem;
+}
+
+.p-Aichi__image {
+  width: 30rem;
 }
 
 .p-confirm__text.-view {
@@ -228,6 +244,13 @@ li {
   background-color: #fff;
   color: #000;
   border-radius: 21rem;
+}
+
+.p-top__title.-view {
+  color: #fff;
+  font-family: 'Caveat', sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
 }
 
 /* Utillity -------------- */

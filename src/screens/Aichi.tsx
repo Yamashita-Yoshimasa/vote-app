@@ -1,26 +1,14 @@
-import * as React from "react"
-import { Link } from 'react-scroll';
+import * as React from 'react';
 
 class Aichi extends React.Component {
-    componentDidMount() {
-        const ConfirmID = document.getElementById("confirm");
-        ConfirmID.style.minHeight = window.innerHeight + 'px';
-    }
     render (){
         return (
-            <div id="confirm" className="l-confirm">
-                <div className="p-confirm">
-                    <p className="p-confirm__text -view">まずはあなたの<br/>選挙区を確認しましょう。</p>
-                    <div className="c-arrow__box">
-                        <Link
-                            activeClass="active"
-                            to="select"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration= {800}
-                                ><i className="c-arrow fas fa-angle-double-down -view"></i></Link>
+            <div id="Aichi" className="l-Aichi">
+                <div className="p-Aichi">
+                    <div className="p-Aichi__imagebox">
+                        <img className="p-Aichi__image" src={`${window.location.origin}/images/Aichi.png`} alt=""/>
                     </div>
+                    
                 </div>
             </div>
         );

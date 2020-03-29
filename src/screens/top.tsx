@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 import { Link } from 'react-scroll';
 import Confirm from './confirm';
 import SelectPrefecture from './SelectPrefecture';
