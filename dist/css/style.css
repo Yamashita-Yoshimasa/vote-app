@@ -280,6 +280,10 @@ li {
   }
 }
 
+.p-ward__ward-box {
+  margin-top: 1rem;
+}
+
 .p-ward__ward-box.-view {
   border-bottom: 1px solid #fff;
 }
