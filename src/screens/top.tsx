@@ -20,7 +20,7 @@ class Top extends React.Component {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration= {0}
+                            duration= {400}
                                 ><i className="c-arrow fas fa-angle-double-down -view"></i></Link>
                     </div>
                 </div>
