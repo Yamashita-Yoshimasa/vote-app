@@ -5,6 +5,7 @@
     "watch": "webpack -w"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.1.0",
@@ -23,6 +24,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "react-scroll": "^1.7.16"
   },
   "private": true

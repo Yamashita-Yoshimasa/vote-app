@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link } from 'react-scroll';
+import * as React from 'react'
+import { Link } from 'react-router-dom';
 //import Drop from './drop'
 
 //親コンポーネントからデータを受け取る時、必ずそのデータの型を指定する必要がある。
@@ -24,15 +24,7 @@ class Select extends React.Component<SelectProps,{}> {
                 <div className="p-select">
                     <p className="p-select__text -view">あなたの住んでいる<br/>都道府県を<br/>選択してください</p>
                     {PrefectureList.map(item =>(
-                        <Link
-                        activeClass="active"
-                        to="ward"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration= {800}
-                        key={item}
-                        ><p className="p-select__text -list -view" onClick={() => this.props.ToggleFlag(item)}>{item}</p></Link>
+                        <Link to={`/${item}`} key={item} className="p-select__text -list -view" onClick={() => this.props.ToggleFlag(item)}>{`/${item}`}</Link>
                     ))}
                 </div>
             </div>
