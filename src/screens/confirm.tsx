@@ -1,7 +1,12 @@
 import * as React from "react"
 import { Link } from 'react-scroll';
 
-function Confirm() {
+class Confirm extends React.Component {
+    componentDidMount() {
+        const ConfirmID = document.getElementById("confirm");
+        ConfirmID.style.minHeight = window.innerHeight + 'px';
+    }
+    render (){
         return (
             <div id="confirm" className="l-confirm">
                 <div className="p-confirm">
@@ -19,5 +24,6 @@ function Confirm() {
                 </div>
             </div>
         );
+    }
     }
 export default Confirm;

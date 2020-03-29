@@ -1,17 +1,19 @@
-document.body.onload = ()=>{
-    document.body.style.minHeight = window.innerHeight + 'px';
-}
+// const TopID = document.getElementById("top");
+// const ConfirmID = document.getElementById("confirm");
+// const SelectID = document.getElementById("select");
+// window.onload = ()=>{
+//     TopID.style.minHeight = window.innerHeight + 'px';
+//     ConfirmID.style.minHeight = window.innerHeight + 'px';
+//     SelectID.style.minHeight = window.innerHeight + 'px';
+// }
 let timeoutId;
-const top = document.getElementById("top");
-const confirm = document.getElementById("confirm");
-const select = document.getElementById("select");
 
 window.addEventListener("resize", () => {
     clearTimeout(timeoutId);
 
     timeoutId = setTimeout(() => {
-        document.top.style.minHeight = window.innerHeight + 'px';
-        document.confirm.style.minHeight = window.innerHeight + 'px';
-        document.select.style.minHeight = window.innerHeight + 'px';
+        document.getElementById("top").style.minHeight = window.innerHeight + 'px';
+        document.getElementById("confirm").style.minHeight = window.innerHeight + 'px';
+        document.getElementById("select").style.minHeight = window.innerHeight + 'px';
     }, 500);
 });

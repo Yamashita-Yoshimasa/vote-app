@@ -1,7 +1,12 @@
 import * as React from "react"
 import { Link } from 'react-scroll';
 
-function Top() {
+class Top extends React.Component {
+    componentDidMount() {
+        const TopID = document.getElementById("top");
+        TopID.style.minHeight = window.innerHeight + 'px';
+    }
+    render () {
         return (
             <div id="top" className="l-top">
                 <div className="p-top">
@@ -18,7 +23,8 @@ function Top() {
                     </div>
                 </div>
             </div>
-        )
+        );
+    }
 }
 
 export default Top;

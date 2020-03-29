@@ -13,7 +13,10 @@ class Select extends React.Component<SelectProps,{}> {
         super(props);
         
     }
-
+    componentDidMount() {
+        const SelectID = document.getElementById("select");
+        SelectID.style.minHeight = window.innerHeight + 'px';
+    }
     render(){
         const PrefectureList:string[] = this.props.Prefecture
         return (

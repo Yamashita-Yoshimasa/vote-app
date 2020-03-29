@@ -29,8 +29,6 @@ class Ward extends React.Component<WardProps,WardState>{
               var data = doc.data();
               buff.push([doc.id, data.ward]);
             });
-            console.log(typeof buff)
-
             this.setState({WardBox: buff});
           })
           .catch((error)=>{
