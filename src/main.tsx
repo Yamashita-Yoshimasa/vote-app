@@ -15,8 +15,8 @@ class App extends React.Component {
         <Switch>
           <div className="container">
           <Route exact path="/" component={Top} />
-          <Route exact path="/愛知" component={Aichi} />
-          <Route exact path="/三重" component={Mie} />
+          <Route exact path="/愛知/" component={Aichi} />
+          <Route exact path="/三重/" component={Mie} />
           </div>
         </Switch>
       </BrowserRouter>
