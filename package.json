@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --mode development --content-base ./dist --hot --inline --colors --port 3000 --open",
+    "start": "webpack-dev-server --hot --inline --watch-content-base --content-base ./dist --open --history-api-fallback",
     "watch": "webpack -w"
   },
   "devDependencies": {

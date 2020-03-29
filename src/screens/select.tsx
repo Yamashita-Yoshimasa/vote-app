@@ -24,7 +24,7 @@ class Select extends React.Component<SelectProps,{}> {
                 <div className="p-select">
                     <p className="p-select__text -view">あなたの住んでいる<br/>都道府県を<br/>選択してください</p>
                     {PrefectureList.map(item =>(
-                        <Link to={`/${item}`} key={item} className="p-select__text -list -view" onClick={() => this.props.ToggleFlag(item)}>{`/${item}`}</Link>
+                        <Link to={`/${item}`} key={item} className="p-select__text -list -view" onClick={() => this.props.ToggleFlag(item)}>{item}</Link>
                     ))}
                 </div>
             </div>

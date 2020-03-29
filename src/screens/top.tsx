@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from 'react-scroll';
-
+import Confirm from './confirm';
+import SelectPrefecture from './SelectPrefecture';
 class Top extends React.Component {
     componentDidMount() {
         const TopID = document.getElementById("top");
@@ -8,6 +9,7 @@ class Top extends React.Component {
     }
     render () {
         return (
+        <div className="container">
             <div id="top" className="l-top">
                 <div className="p-top">
                     <h1 className="p-top__title -view">Let's Vote</h1>
@@ -23,6 +25,9 @@ class Top extends React.Component {
                     </div>
                 </div>
             </div>
+            <Confirm />
+            <SelectPrefecture />
+        </div>
         );
     }
 }
